@@ -244,6 +244,7 @@ p{
     #profile{
         height: auto;
         background-color: #f2f2f2;
+        padding: 50px;
     }
     #profile .inner{
         display: flex;
