@@ -189,6 +189,7 @@ p{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100vh;
     }
     .hamster{
         display: none;
@@ -241,13 +242,16 @@ p{
 
 @media screen and (max-width: 767px){
     #profile{
-        font-size: 12px;
+        height: 40vh;
     }
     #profile .inner{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    #profile .inner p{
+        font-size: 20px;
     }
     .watashi{
         width: 180px;
