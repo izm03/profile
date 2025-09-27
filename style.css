@@ -158,6 +158,7 @@ p{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+    /* background-color: pink; */
 }
 .fikidashi{
     position: absolute;
@@ -189,6 +190,29 @@ p{
 @media screen and (max-width: 767px){
     #top{
         margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamster{
+        display: none;
+    }
+    #top .inner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .fikidashi{
+        position: relative;
+        top: 0;
+        left: 0;
+        /* background-color: blue; */
+    }
+    .neco{
+        position: relative;
+        top: 0;
+        right: 0;
+        /* background-color: red; */
     }
 }
 
@@ -221,8 +245,16 @@ p{
     #profile{
         font-size: 12px;
     }
+    #profile .inner{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
     .watashi{
         width: 180px;
+        margin-right: 0;
+        margin-top: 50px;
     }
 }
 
@@ -235,7 +267,6 @@ p{
     margin-bottom: 30px;
 }
 .item{
-    /* margin-bottom: 50px; */
     padding: 50px 0;
 }
 
@@ -267,12 +298,10 @@ p{
 .bicycle{
     height: 280px;
     width: auto;
-    /* padding-left: 50px; */
 }
 .pc_work{
     width: 330px;
     height: auto;
-    /* padding-right: 50px; */
 }
 .car{
     width: 450px;
@@ -289,14 +318,26 @@ p{
 }
 
 @media screen and (max-width: 767px){
-    .bicycle{
-        width: 200px;
+    .img_box{
+        display: flex;
+        flex-direction: column;
         height: auto;
+        padding: 20px;
+    }
+    .bicycle{
+        width: auto;
+        height: 400px;
         margin: 0;
     }
     .pc_work{
-        width: 200px;
+        width: 300px;
         height: auto;
+    }
+    .item_title{
+        font-size: 30px;
+    }
+    .sub_title{
+        font-size: 25px;
     }
 }
 
