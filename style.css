@@ -242,7 +242,7 @@ p{
 
 @media screen and (max-width: 767px){
     #profile{
-        height: 40vh;
+        height: auto;
     }
     #profile .inner{
         display: flex;
